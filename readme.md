@@ -1,10 +1,10 @@
 # Intro to Ruby
 
-The slides for this course can be viewed [here](http://cherimarie.github.io/gdi-ruby)
+The slides for this course can be viewed [here](http://katestud.github.io/gdi-ruby)
 
-This is an Intro to Ruby course. All material by Cheri Allen and Heather Moore. Thanks to Chris Pine and Sandi Metz for inspirational books.
+This is an Intro to Ruby course. Original material was created by Cheri Allen and Heather Moore, with thanks to Chris Pine and Sandi Metz for inspirational books. This material was modified by Kate Studwell for the GDI RDU Chapter. 
 
-The course is meant to be taught in 5 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+The course was originally designed to be taught in 5 two-hour sections. The GDI RDU chapter course is taught in 4 two-hour sessions, with some pre-class setup steps.
 
 ## Course description
 
@@ -12,17 +12,11 @@ Ready to start programming? Want to learn one language that you can use to build
 
 Ruby is an open source language that powers applications and products like Hulu, LivingSocial, Groupon, and Github. There is a thriving, friendly community of users, and the job market for developers is strong.
 
-Through this five course series, you'll get a throrough introduction to programming fundamentals with Ruby. We'll use the Interactive RuBy shell; write command line programs that use loops, conditionals, methods, and classes; and learn the basics of object oriented programming. We'll mix lecture and practice, and help guide you through the coursework.
+Through this four course series, you'll get a throrough introduction to programming fundamentals with Ruby. We'll use the Interactive RuBy shell; write command line programs that use loops, conditionals, methods, and classes; and learn the basics of object oriented programming. We'll also learn the basics of git so you can share your code with the world. We'll mix lecture and practice, and help guide you through the coursework.
 
-We'll spend part of the first class meeting setting up your development environment, so there's no need to install software ahead of time. Just bring your laptop and be prepared to start coding!
+We'll share some set up steps before the first class, but if you're not able to set things up beforehand, there will be time at the beginning of the first class to complete step and do any troubleshooting necessary. 
 
-**Cost:**
-
-**Dates:**
-
-**Location:**
-
-A limited number of scholarships are available for those with a financial hardship. To apply, contact us at...
+Course details can be found on [Meetup](https://www.meetup.com/Girl-Develop-It-RDU/events/254779101/).
 
 
 ### Prerequisites:
@@ -35,7 +29,7 @@ An interest in programming and be comfortable using a computer.
 ### Tech requirements:
 
  - Your laptop (Mac, PC, or Linux are all okay).
- - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
+ - A text editor. We recommend [VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io/).
 
 
 ### Topics covered:
