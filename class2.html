@@ -109,27 +109,27 @@
           <h3>Boolean Expressions cheat sheet</h3>
           <table>
               <tr>
-                  <td>a == b</td>
+                  <td><strong>a == b</strong></td>
                   <td>a is equal to b</td>
               </tr>
               <tr>
-                  <td>a != b</td>
+                  <td><strong>a != b</strong></td>
                   <td>a does not equal b</td>
               </tr>
               <tr>
-                  <td>a &lt; b</td>
+                  <td><strong>a &lt; b</strong></td>
                   <td>a is less than b</td>
               </tr>
               <tr>
-                  <td>a &gt; b</td>
+                  <td><strong>a &gt; b</strong></td>
                   <td>a is greater than b</td>
               </tr>
               <tr>
-                  <td>a &lt;= b</td>
+                  <td><strong>a &lt;= b</strong></td>
                   <td>a is less than or equal to b</td>
               </tr>
               <tr>
-                  <td>a &gt;= b</td>
+                  <td><strong>a &gt;= b</strong></td>
                   <td>a is greater than or equal to b</td>
               </tr>
             </table>
@@ -157,7 +157,7 @@ puts 3 &lt; 5
 
         <section>
           <h3>Boolean Expressions</h3>
-          <p>A boolean expression evaluates to true or false. It can also have multiple parts, joined by AND (&&) or OR (||).</p>
+          <p>A boolean expression evaluates to <strong>true</strong> or <strong>false</strong>. It can also have multiple parts, joined by AND (&&) or OR (||).</p>
           <table>
             <tr>
               <th>EXPRESSION</th>
@@ -217,11 +217,11 @@ user_guess = gets.chomp.to_i
 secret_number = 312
 
 if user_guess < secret_number
-puts "Too low!"
+  puts "Too low!"
 elsif user_guess > secret_number
-puts "Too high!"
+  puts "Too high!"
 else
-puts "You guessed it. Wow maybe you're psychic...."
+  puts "You guessed it. Wow maybe you're psychic...."
 end
           </code></pre>
           <p>Can you tell what this code does?</p>
@@ -233,7 +233,7 @@ end
           <p>We achieve this using <strong>if</strong> statements and boolean expressions.</p>
           <pre><code  class="fragment ruby">
 if x == 5
-puts 'x is equal to 5'
+  puts 'x is equal to 5'
 end
           </code></pre>
           </section>
@@ -242,9 +242,9 @@ end
           <p>We often want a different block to execute if the statement is false. This can be accomplished using <strong>else</strong>.</p>
           <pre><code  class="fragment ruby">
 if x == 5
-puts 'x is equal to 5'
+  puts 'x is equal to 5'
 else
-puts 'x is not equal to 5'
+  puts 'x is not equal to 5'
 end
           </code></pre>
         </section>
@@ -255,17 +255,17 @@ end
           <pre><code  class="ruby">
 # And
 if x > 3 && y > 3
-puts 'Both values are greater than 3'
+  puts 'Both values are greater than 3'
 end
 
 # Or
 if x != 0 || y != 0
-puts 'The point x,y is not on the x or y axis'
+  puts 'The point x,y is not on the x or y axis'
 end
 
 # Not
-if not(x > y)
-puts 'x is less than y'
+if !(x > y)
+  puts 'x is less than y'
 end
           </code></pre>
         </section>
@@ -278,11 +278,11 @@ end
           <p>For example:</p>
           <pre><code  class="fragment ruby">
 if x > 10
-puts "x is greater than 10"
+  puts "x is greater than 10"
 elsif x <= 10 && x > 0
-puts "x is a number between 1 and 10"
+  puts "x is a number between 1 and 10"
 else
-puts "Wow, don't be so negative, dude"
+  puts "Wow, don't be so negative!"
 end
           </code></pre>
         </section>
@@ -314,11 +314,11 @@ puts "2 - Climb a tree"
 input = gets.chomp
 
 if input == '1'
-puts "You hide in a cave. The dragon finds you and asks if you'd like to play Scrabble. Maybe it's not so vicious after all!"
+  puts "You hide in a cave. The dragon finds you and asks if you'd like to play Scrabble. Maybe it's not so vicious after all!"
 elsif input == '2'
-puts "You climb a tree. The dragon can't find you."
+  puts "You climb a tree. The dragon can't find you."
 else
-puts "That's not a valid option."
+  puts "That's not a valid option."
 end
           </code></pre>
           <pre><code class="ruby">
@@ -333,13 +333,13 @@ ruby dragon.rb
           <h3>Loops</h3>
           <p>It is often useful to perform a task and to repeat the process until a certain point is reached.</p>
           <p>The repeated execution of a set of statements is called <strong>iteration</strong>, or, more commonly, a loop.</p>
-          <p>One way to achieve this, is with the <strong>while</strong> loop.</p>
+          <p>One way to achieve this is with the <strong>while</strong> loop.</p>
           <pre><code  class="ruby">
 x = 10
 
 while x > 0
-puts "Loop number #{x}"
-x = x - 1
+  puts "Loop number #{x}"
+  x = x - 1
 end
 
 puts 'Done'
@@ -351,8 +351,8 @@ puts 'Done'
 x = 10
 
 while x > 0
-puts "Loop number #{x}"
-x = x - 1
+  puts "Loop number #{x}"
+  x = x - 1
 end
           </code></pre>
           <p>The while statement takes a condition, and as long as it evaluates to true, the code block beneath it is repeated. This creates a <strong>loop</strong>.</p>
@@ -366,11 +366,11 @@ end
 num_bottles = 99
 
 while num_bottles > 0
-puts "#{num_bottles} bottles of beer on the wall,
-#{num_bottles} bottles of beer, take one down, pass it
-around, #{num_bottles - 1} bottles of beer on the wall!"
+  puts "#{num_bottles} bottles of beer on the wall,
+    #{num_bottles} bottles of beer, take one down, pass it
+    around, #{num_bottles - 1} bottles of beer on the wall!"
 
-num_bottles = num_bottles - 1
+  num_bottles = num_bottles - 1
 end
           </code></pre>
           <p>"#{num_bottles}" is an example of <strong>string interpolation</strong></p>
@@ -393,12 +393,12 @@ end
 loopy = true
 
 while loopy == true
-puts "Are we having fun yet?"
-puts "Answer 'true' or 'false'."
-user_input = gets.chomp
-if user_input == 'false'
-loopy = false
-end
+  puts "Are we having fun yet?"
+  puts "Answer 'true' or 'false'."
+  user_input = gets.chomp
+  if user_input == 'false'
+    loopy = false
+  end
 end
           </code></pre>
           <p>Learn more about loops in Ruby <a href="http://www.tutorialspoint.com/ruby/ruby_loops.htm" alt="Loops tutorial">here</a>.</p>
@@ -411,7 +411,7 @@ end
             <p>First, we need a collection. We use a <strong>range</strong> of numbers to loop over.</p>
             <pre><code  class="fragment ruby">
 (0..5).each do |i|
-puts "Value of i is #{i}"
+  puts "Value of i is #{i}"
 end
             </code></pre>
 
@@ -421,7 +421,7 @@ end
             <h3>Each loops</h3>
             <pre><code  class="ruby">
 (0..5).each do |i|
-puts "Value of i is #{i}"
+  puts "Value of i is #{i}"
 end
             </code></pre>
             <p>The loop has three parts:</p>
@@ -478,7 +478,7 @@ letter_range = ('a'..'e') # contains 'a', 'b', 'c', 'd', 'e'
 (28..22).min
 
 ('a'...'g').each do |l|
-puts "#{l} is a pretty good letter"
+  puts "#{l} is a pretty good letter"
 end
 
 (22..28).to_a
@@ -517,7 +517,7 @@ arr[2]          # returns the third element
 arr[-1]         # returns the last (1st from the end) element
 new_array.last  # returns the last element
 new_array[1..2] # returns the second and third elements
-arr.first       # returns the first element
+arr.first       # returns the first element, which is also the zeroth element
           </code></pre>
         </section>
 
@@ -534,6 +534,7 @@ arr << "yikes"          # adds argument as last element
 #remove
 arr.delete("wow")       # deletes the element that matches argument
 arr.pop                 # removes and returns the last element
+arr.shift               # removes and returns the first element
           </code></pre>
         </section>
 
@@ -559,7 +560,10 @@ arr.empty?        # returns a boolean
 <!-- minutes-->
         <section>
           <h3>Hashes</h3>
-          <p>Hashes have curly braces and hash rockets and can be filled with any data type: integers, floats, strings, even arrays and hashes. </p>
+          <p>
+            Hashes are like dictionaries, with unique <strong>key / value</strong> pairs.
+            They can be filled with any data type: integers, floats, strings, even arrays and hashes.
+          </p>
           <pre><code  class="fragment ruby">
 grades_hash = { "Jane Doe" => 10, "Jim Doe" => 6, "Jan Doe" => 8}
 new_hash = { 1 => "a", "d" => 12, "f" => 35 }
@@ -573,13 +577,14 @@ new_hash.has_value?(35)
 
           </code></pre>
           <p>Syntax:</p>
-          <p>{ key => value, key => value }
+          <p>{ key => value, key_two => value_two }</p>
+          <p>{ key: value, key_two: value_two }  </p>
         </section>
 
         <section>
           <h3>Accessing Elements in Hashes</h3>
-          <p>Hashes are <strong>unordered.</strong> Hashes are like dictionaries, with unique <strong>key / value</strong> pairs.</p>
-          <p>Because hashes can have any type of object as an idex, and are unordered, we must access values by their <strong>key</strong>.</p>
+          <p>Hashes are <strong>unordered.</strong></p>
+          <p>Because hashes can have any type of object, and are unordered, we must access values by their <strong>key</strong>.</p>
           <pre><code  class="fragment ruby">
 grades_hash = { "Jane Doe" => 10, "Jim Doe" => 6, "Jan Doe" => 8}
 new_hash = { 1 => "a", "d" => 12, "f" => 35 }
@@ -615,7 +620,7 @@ chapters.keys       # returns an array of all the keys in hash
 chapters.has_key?("How It Ended")  # returns a boolean
 chapters.to_a       # converts hash to an array of arrays
 chapters.invert     # returns new hash with old one's values
-                  # as keys and keys as values
+                    # as keys and keys as values
             </code></pre>
             <p>Learn more about hashes <a href="http://www.ruby-doc.org/core-2.1.1/Hash.html" alt="Ruby Docs">here</a>.</p>
         </section>
@@ -632,7 +637,7 @@ chapters.invert     # returns new hash with old one's values
           <p>This is the simplest!</p>
           <pre><code class="ruby">
 (3..8).each do |n|
-puts n * 4
+  puts n * 4
 end
           </code></pre>
         </section>
@@ -643,15 +648,15 @@ end
           <pre><code class="ruby">
 pets_array = ["dog", "cat", "turtle", "parakeet", "ferret"]
 
-pets_array.each do |p|
-puts "I like #{p}s!!"
+pets_array.each do |pet|
+  puts "I like #{pet}s!!"
 end
 
 
 deep_array = [["mountain", "desert"], ["ocean", "sky"]]
 
-deep_array.each do |p|
-puts "I like #{p.first}s!!"  # each element is also an array
+deep_array.each do |flat_array|
+  puts "I like #{flat_array.first}s!!"  # each element is also an array
 end
           </code></pre>
         </section>
@@ -663,7 +668,7 @@ end
 grades_hash = { "Jane Doe" => 10, "Jim Doe" => 6, "Jan Doe" => 8}
 
 grades_hash.each do |key, value|
-puts "#{key}'s grade is #{value}"
+  puts "#{key}'s grade is #{value}"
 end
           </code></pre>
         </section>
@@ -679,7 +684,7 @@ end
 
         <section>
           <h3>Enumerable</h3>
-          <p>Visit <a href="https://gist.github.com/cherimarie/11004115" alt="Gist with pets array">this page</a> and copy the contents of the Gist to a local file. Save it as pets.rb. We'll work with it together in IRB.</p>
+          <p>Visit <a href="https://gist.github.com/katestud/da1f20af3d930e0aac36447e1e05215f" alt="Gist with pets array">this page</a> and copy the contents into an irb session. We'll work with it together in IRB.</p>
         </section>
 
         <section>
@@ -696,8 +701,8 @@ end
           <h3>Enumerable: Collect and Map</h3>
           <p>Returns an array with the results of running the block on each element. Can be used interchangably.</p>
           <pre><code class="ruby">
-$pets.collect{|p| p[:name]}      # returns array of all pet names
-$pets.collect{|p| p[:legs]}.reduce(:+) # returns sum of all pet legs
+pets.map { |p| p[:name] }      # returns array of all pet names
+pets.map { |p| p[:legs] }.reduce(:+) # returns sum of all pet legs
           </code></pre>
         </section>
 
@@ -705,7 +710,7 @@ $pets.collect{|p| p[:legs]}.reduce(:+) # returns sum of all pet legs
           <h3>Enumerable: Reject</h3>
           <p>Returns an array with all elements that did not meet the critera in code block.</p>
           <pre><code class="ruby">
-$pets.reject{|p| p[:talents].include? "napping" }
+pets.reject { |p| p[:talents].include? "napping" }
   # returns array of pets whose talents do not include napping
           </code></pre>
         </section>
@@ -719,26 +724,21 @@ $pets.reject{|p| p[:talents].include? "napping" }
             <h3>Let's Develop It- Sample Code</h3>
             <p>How many of our pets are nocturnal?</p>
             <pre><code class="ruby">
-$pets.reject{|p| p[:nocturnal]== false}.count
+pets.reject { |p| p[:nocturnal] == false }.count
             </code></pre>
           </section>
 
-<!--
-        <section>
-            <h3>Nil</h3>
-            <p class="fragment">Nil is an <strong>object</strong>! Try the following in IRB:</p>
-            <pre><code  class="fragment ruby">
-nil.class
-nil.to_a
-nil.to_i
-nil.to_s
-nil.size
-            </code></pre>
-            <p class="fragment">There are some methods associated with nil, like .to_a, to help prevent errors in your code. If you try to call .to_a on something without first setting the value of it, you'll get an empty array instead of an error.</p>
-
-
-            <p>Learn more about the nil class <a href="http://www.ruby-doc.org/core-2.1.0/NilClass.html" alt="ruby documentation - nil class">here</a>.</p>
-        </section> -->
+          <section>
+            <h3>A Syntax Note</h3>
+            <p>Curly Braces and do..end</p>
+            <pre><code class="ruby">
+          pets.reject { |p| p[:nocturnal] == false }
+          # is the same as...
+          pets.reject do |p| 
+              p[:nocturnal] == false
+          end
+          </code></pre>
+          </section>
 
         <section>
           <h3>Questions?</h3>
