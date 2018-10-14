@@ -92,19 +92,146 @@
             </ul>
           </div>
         </section>
-        <section>
-          <h3>Placeholder -- add review steps from setup class here</h3>
-        </section>
-        <!-- Setting the Stage - 10 min -->
+        <!-- Setting the Stage And Review - 20 min -->
         <section>
           <h3>What we will cover today</h3>
           <ul>
+            <li class="fragment">Installation Review</li>
+            <li class="fragment">Command Line Basics</li>
             <li class="fragment">What is programming?</li>
             <li class="fragment">Why Ruby?</li>
             <li class="fragment">Variables, Arithmetic & Objects</li>
             <li class="fragment">Methods and Error Messages</li>
           </ul>
         </section>
+        <section>
+          <h3>Installation Review</h3>
+          <p>PLACEHOLDER: ADD SOME COMMANDS HERE TO CONFIRM INSTALLATION</p>
+        </section>
+
+        <!-- Part 2: Intro to Terminal, 20 minutes -->
+        <section>
+          <h3>Intro to Terminal</h3>
+          <p>Working in the terminal can be really intimidating at first!</p>
+          <p>With practice, navigation and file manipulation is significantly faster in the terminal than in the GUI.</p>
+          <p>Professional software developers use the terminal all the time, and this class will require some use of it.</p>
+        </section>
+        
+        <section>
+          <h3>Intro to Terminal</h3>
+          <p>Mac & Linux users: Open <strong>Terminal</strong></p>
+          <p>Windows users: Open <strong>Git-Bash</strong></p>
+          <br>
+          <p>We will not be using Windows "cmd" program, as it uses a different syntax than *NIX systems.</p>
+        </section>
+
+        <section>
+          <h3>Intro to Terminal Prompt</h3>
+          <p>The line that appears in the terminal when you open it is called the prompt. It usually contains information about
+            the user and current directory. It can be customized.</p>
+          <img src="img/prompt1.png" alt="example prompt">
+          <img src="img/prompt2.png" alt="example prompt">
+          <img src="img/prompt3.png" alt="example prompt">
+          <img src="img/prompt4.png" alt="example prompt">
+          <img src="img/prompt5.png" alt="example prompt">
+          <p>Terminal instructions often start a line with a $. This represents the last character in the prompt, you don't
+            have to type it.</p>
+        </section>
+
+        <section>
+          <h3>Terminal Cheatsheet</h3>
+          <table style="font-size: 20px; line-height: 1.4em;">
+            <tr>
+              <td>.</td>
+              <td>the current directory- ex: "touch ./wow.txt"</td>
+            </tr>
+            <tr>
+              <td>..</td>
+              <td>the parent of current directory - ex: "cd ../RubyParty"</td>
+            </tr>
+            <tr>
+              <td>~</td>
+              <td>the root directory- ex: "cd ~/Pictures"</td>
+            </tr>
+            <tr>
+              <td>cd [location]</td>
+              <td>"change directory" to [location]</td>
+            </tr>
+            <tr>
+              <td>pwd</td>
+              <td>"present working directory" - where am I?</td>
+            </tr>
+            <tr>
+              <td>ls -al</td>
+              <td>"list all" of the contents of current directory, including invisible ones</td>
+            </tr>
+            <tr>
+              <td>touch [filename.extension]</td>
+              <td>create a file called filename.extension in the current directory</td>
+            </tr>
+            <tr>
+              <td>mkdir [directoryname]</td>
+              <td>create a directory called directoryname in the current directory</td>
+            </tr>
+            <tr>
+              <td>rm [filename]</td>
+              <td>"remove" (delete) the file called filename</td>
+            </tr>
+            <tr>
+              <td>rm -rf [directoryname]</td>
+              <td>"remove recursively with force" the directory called directoryname</td>
+            </tr>
+            <tr>
+              <td>clear OR cmd+k</td>
+              <td>clear the terminal screen</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>lists all possible commands</td>
+            </tr>
+            <tr>
+              <td>man [command]</td>
+              <td>displays the manual for command</td>
+            </tr>
+          </table>
+        </section>
+                
+        <section>
+          <h3>Terminal Activities</h3>
+          <pre><code class="terminal">
+        # navigate to your desktop
+        cd ~/Desktop    #Linux, Mac
+        cd desktop      #Windows
+        
+        # make a directory called ruby_adventures
+        mkdir ruby_adventures
+        
+        # navigate into new directory
+        cd ruby_adventures
+        
+        # create a file
+        touch class0.rb
+        
+        # list the contents of the directory
+        ls
+                  </code></pre>
+        </section>
+        
+        <section>
+          <h3>Terminal Activities</h3>
+          <pre><code class="terminal">
+          man ls
+                  </code></pre>
+          <p>Output:</p>
+          <img src="img/manls.png">
+        </section>
+
+        <section>
+          <h3>Questions?</h3>
+        </section>
+
+         <!-- Part 3: Intro to Programming and Ruby, 5 minutes -->
+
         <section>
           <h3>What is programming?</h3>
           <ul>
