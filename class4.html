@@ -47,7 +47,7 @@
       <div class="slides">
        <!-- Opening slide -->
         <section>
-          <img src = "images/gdi_logo_badge.png">
+          <img src = "img/gdi_logo_badge.png">
           <h3>Intro to Ruby</h3>
           <h4>Class 4</h4>
         </section>
@@ -91,16 +91,6 @@ end
 end
 
 write = left/100 # this line begins the existing code that deals with hundreds
-          </code></pre>
-        </section>
-
-        <section>
-          <h3>HW: Wedding Numbers</h3>
-          <p>You could modify the code in the EnglishNumbers program to make it WeddingNumbers by replacing some of the added spaces with added 'and's and spaces: </p>
-          <pre><code class="ruby">
-# numString = numString + ' '   # old code
-
-numString = numString + ' and '
           </code></pre>
         </section>
 
@@ -162,17 +152,17 @@ b.methods
 
         <section>
           <h3>Extending a Class</h3>
-          <p>You can write new methods for the built in classes of Ruby. They will then be available to all instances of that class in your program.</p>
+          <p>You can write new methods for the built in classes of Ruby. They will then be available to all instances of that class in your program. Note: This is not recommended!</p>
           <pre><code contenteditable class="fragment ruby">
 class String
-def get_excited
-wow = self + "!!!"
-return wow
-end
+  def get_excited
+    wow = self + "!!!"
+    return wow
+  end
 end
           </code></pre>
           <p>"self" refers to the object calling the method.</p>
-          <p>You can redefine existing methods for classes this way, too, but it's not recommended.</p>
+          <p>You can redefine existing methods for classes this way, too, but it's also not recommended.</p>
         </section>
 
 <!-- Creating a class: 20 minutes -->
@@ -183,14 +173,14 @@ end
 # die.rb
 class Die
 
-def roll
-@numberShowing = 1 + rand(6)
-#rand(6) returns a random-ish number between 0-5
-end
+  def roll
+    @number_showing = 1 + rand(6)
+    #rand(6) returns a random-ish number between 0-5
+  end
 
-def showing
-return @numberShowing
-end
+  def showing
+    return @number_showing
+  end
 
 end
           </code></pre>
@@ -217,17 +207,17 @@ puts die.showing
 # die.rb
 class Die
 
-def initialize
-roll
-end
+  def initialize
+    roll
+  end
 
-def roll
-@numberShowing = 1 + rand(6)
-end
+  def roll
+    @number_showing = 1 + rand(6)
+  end
 
-def showing
-@numberShowing
-end
+  def showing
+    @number_showing
+  end
 
 end
           </code></pre>
@@ -249,25 +239,24 @@ end
 # in character.rb
 class Character
 
-def initialize(name)
-@name = name
-@health = 10
-end
+  def initialize(name)
+    @name = name
+    @health = 10
+  end
 
-def heal
-@health += 6
-end
+  def heal
+    @health += 6
+  end
 
-def adventure
-if @health > 0
-puts "#{@name} goes on a great adventure and meets a dragon!"
-puts "The dragon hugged #{@name} kind of hard..."
-@health -= 5
-else
-puts "#{@name} is dead :("
-exit
-end
-end
+  def adventure
+    if @health > 0
+      puts "#{@name} goes on a great adventure and meets a dragon!"
+      puts "The dragon hugged #{@name} kind of hard..."
+      @health -= 5
+    else
+      puts "#{@name} is dead :("
+    end
+  end
 
 end
           </code></pre>
@@ -278,7 +267,7 @@ end
           <pre><code contenteditable class="ruby">
 # in irb
 load 'character.rb'
-me = Character.new("Cheri")
+me = Character.new("Kate")
 me.adventure
 me.heal
 me.adventure
@@ -300,9 +289,9 @@ me.adventure
           <pre><code class="fragment ruby">
 # in character.rb, after Character class code
 class Elf < Character
-def twinkle
-puts "I'm super magical!"
-end
+  def twinkle
+    puts "I'm super magical!"
+  end
 end
 
 #in irb
@@ -321,13 +310,13 @@ me.twinkle
           <pre><code contenteditable class="fragment ruby">
 # in character.rb, after Character class code
 class Elf < Character
-def twinkle
-puts "I'm super magical!"
-end
+  def twinkle
+    puts "I'm super magical!"
+  end
 
-def heal
-@health += 8 # it's easier to heal when you're magic
-end
+  def heal
+    @health += 8 # it's easier to heal when you're magic
+  end
 end
 
 #in irb
@@ -416,6 +405,14 @@ ruby adventure.rb
                <tr>
                 <td><a href="https://projecteuler.net">Project Euler</a></td>
                 <td>Offers tons of small math problems to be solved via programming, plus forums to share and discuss solutions</td>
+              </tr>
+              <tr>
+                <td><a href="https://exercism.io/tracks/ruby">Exercism</a></td>
+                <td>Small exercises that help you learn the ins and outs of Ruby</td>
+              </tr>
+              <tr>
+                <td><a href="http://rubykoans.com/">Ruby Koans</a></td>
+                <td>Guided learning for furthering your knowledge of built-in Ruby methods</td>
               </tr>
               <tr>
                 <td><a href="https://rubymonk.com/">Ruby Monk</a></td>
