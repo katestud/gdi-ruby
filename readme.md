@@ -34,13 +34,9 @@ An interest in programming and be comfortable using a computer.
 
 ### Topics covered:
 
- - Class 0 - Installfest & Intro to Command Line
-
-    Get your developement environment set up on your machine. Install Ruby, Rails, and Git, with the assistance of some helpful volunteers. We'll also have a brief lecture on working with the command line.
-
  - Class 1 - Intro to programming in Ruby
 
-    What is programming? What is Ruby? We'll give you some context for the class, then dive right into writing code. Using the Interactive Ruby Shell, we'll begin experimenting with variables, methods, and data types. We'll end the class by writing a little interactive command line program.
+    What is programming? What is Ruby? We'll give you some context for the class, have a brief lecture on working with the command line, and then dive right into writing code. Using the Interactive Ruby Shell, we'll begin experimenting with variables, methods, and data types. We'll end the class by writing a little interactive command line program.
 
  - Class 2 - Structured programming (loops and conditions), working with collections data types
 
