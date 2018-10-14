@@ -14,6 +14,9 @@ Set up can be tricky, so please reach out to us if you have any issues at all be
 
 We'll be using Railsbridge's Installfest instructions to get set up. Railsbridge is an awesome organization that we're friends with and you should be, too!
 
-[Follow these installation instructions](http://docs.railsbridge.org/installfest/).Just work through the instructions for your operating system. Stop after the "Configure Git" step.This process should take about an hour.
+[Follow these installation instructions](http://docs.railsbridge.org/installfest/).Just work through the instructions for your operating system. Stop after the "Configure Git" step. This process should take about an hour.
+
+Note that the instructions suggest using the Atom code editor. This is a great option. You can also optionally install [Visual Studio Code](https://code.visualstudio.com/) text editor instead, which is what I'll be using to teach. The two look very similar, so either is fine.
+
 
 Again, please reach out with any questions! We are here to help! And, if you get stuck on any steps, don't worry. We'll help you during class. :smiley_cat:
