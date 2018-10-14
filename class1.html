@@ -76,7 +76,7 @@
             <p>We are excited to host you here at Automated Insights! Some housekeeping before we get started:
             </p>
             <ul>
-              <li>Restrooms are down the hall (past the elevators). You can borrow the pass to get back in, or we can take breaks.</li>
+              <li>Restrooms are down the hall (past the elevators). You can borrow the pass to get back in or wait until we have a break.</li>
               <li>Help yourself to snacks and drinks from the kitchen area.</li>
             </ul>
           </div>
@@ -106,7 +106,14 @@
         </section>
         <section>
           <h3>Installation Review</h3>
-          <p>PLACEHOLDER: ADD SOME COMMANDS HERE TO CONFIRM INSTALLATION</p>
+          <p>Let's make sure you have Ruby and git installed.</p>
+          <p>
+            <pre><code class="terminal">ruby -v</code></pre>
+          </p>
+          <p>
+            <pre><code class="terminal">git --version</code></pre>
+          </p>
+          <p>Any trouble with the installation, or questions about what we did?</p>
         </section>
 
         <!-- Part 2: Intro to Terminal, 20 minutes -->
@@ -238,8 +245,8 @@
             <li class="fragment">Teaching the computer to do a task.</li>
             <li class="fragment">A program is made of one or more files of code, each of which solve part of the overall task.
             </li>
-            <li class="fragment">Programming code is human readable but also needs a form that the computer can run directly.
-              This form is not human readable.
+            <li class="fragment">Programming code is human readable but needs to be converted to a form that the computer can run directly.
+              This converted form is not human readable.
             </li>
           </ul>
         </section>
@@ -256,7 +263,7 @@ for(int i = 0; i < 5; i++)
 5.times do
               </code>
             </pre>
-            <li class="fragment">The community is large, active and interested in helping others learn.</li>
+            <li class="fragment">The community is large, active, and interested in helping others learn.</li>
             <li class="fragment">You can get a web app off the ground quickly.</li>
             <li class="fragment">You can make a lucrative career out of it.</li>
             <li class="fragment">Using Ruby will cost you $0.</li>
@@ -292,7 +299,7 @@ for(int i = 0; i < 5; i++)
               great way to get started quickly.
             </li>
             <li class="fragment">Open: type `irb`</li>
-            <li class="fragment">Quit: Type `quit` and then press `enter`</li>
+            <li class="fragment">Quit: Type `exit` or `quit` and then press `enter`</li>
             <li class="fragment">Follow along with the examples in the slides. Type them in!</li>
             <li class="fragment">Feel free to explore as well. You will not accidentally break things.</li>
           </ul>
@@ -334,11 +341,11 @@ NameError: undefined local variable or method `hi' for main:Object
           <ul>
             <li class="fragment">Variables are references to information.</li>
             <li class="fragment">We reference variables by name.</li>
-            <li class="fragment">They are called variable because the information they reference may change.</li>
+            <li class="fragment">They are called `variable` because the information they reference may change.</li>
           </ul>
           <pre><code contenteditable class="ruby fragment">
 # Everything after this pound sign will not be evaluated.
-# These are called comments and I will use them to annotate code
+# These are called comments and we use them to annotate code
 age = 50
 days_in_year = 365
 days_alive = age * days_in_year
@@ -348,7 +355,7 @@ days_alive = age * days_in_year
         <section>
           <h3>Ruby's Variables</h3>
           <ul>
-            <li class="fragment">Ruby has three kinds of variables, one kind of constant and exactly two pseudo-variables.</li>
+            <li class="fragment">Ruby has three kinds of variables, one kind of constant, and exactly two pseudo-variables. For the most part, this class will focus on <em>local</em> variables.</li>
             <li class="fragment">A local variable starts with a lower case letter or an underscore character (_) and consists entirely of letters, numbers and underscores.</li>
           </ul>
           <pre><code contenteditable class="ruby fragment">
@@ -439,10 +446,10 @@ c.reverse
 => "dlroW olleH"
           </code></pre>
           <pre><code contenteditable class="ruby fragment">
-a = "Nana "
+a = "Ruby "
 b = a * 4
-# Here multiplying a "Spam " by 4 concatenates (links) four strings
-=>"Nana Nana Nana Nana "
+# Here multiplying a String "Ruby " by 4 concatenates (links) four strings
+=>"Ruby Ruby Ruby Ruby "
 together
           </code></pre>
         </section>
@@ -548,7 +555,7 @@ irb> hash_of_key_to_value =
           <ul>
             <li class="fragment">Methods define the behavior for an Object.</li>
             <li class="fragment">String Objects can <strong>reverse</strong>, for example.</li>
-            <li class="fragment">Some methods are accessed using our friend 'dot' and some are standalone.</li>
+            <li class="fragment">Some methods are accessed following a 'dot' (.) and some are standalone.</li>
             <li class="fragment">Let's call some methods</li>
           </ul>
           <pre>
@@ -609,7 +616,7 @@ puts 'Pleased to meet you, ' + name + '. :)'
         <section>
           <h3>Lab 2</h3>
           <ul>
-            <li>Update your code to return a message in all capital letters, reversed with a count of the characters returned in parens.</li>
+            <li>Update your code to return a message in all capital letters with a count of the characters returned in parens.</li>
           </ul>
           <pre><code class="ruby">
 # YOU ARE 5 YEARS OLD IN DOG YEARS (32 characters)
@@ -622,7 +629,7 @@ puts 'Pleased to meet you, ' + name + '. :)'
         <section>
           <h3>Homework</h3>
           <p><strong>Practice:</strong> Write a command line program that asks the user for their birthday (be sure to specify format), then calculates their age in years, days, and seconds. Tell the user how old they are in these different formats. (Note: you'll be using 'gets' and 'puts' in this program, along with some math!)</p>
-          <p><strong>Prep:</strong> Read <a href="https://pine.fm/LearnToProgram/?Chapter=06" alt="Chp 6 of Learn to Program">Chapter 6</a> and <a href="https://pine.fm/LearnToProgram/?Chapter=07" alt="Chp 7 of Learn to Program">Chapter 7</a> of Learn To Program- don't try to do the exercises at the end yet, though.</p>
+          <p><strong>Optional Prep:</strong> Read <a href="https://pine.fm/LearnToProgram/?Chapter=06" alt="Chp 6 of Learn to Program">Chapter 6</a> and <a href="https://pine.fm/LearnToProgram/?Chapter=07" alt="Chp 7 of Learn to Program">Chapter 7</a> of Learn To Program- don't try to do the exercises at the end yet, though.</p>
         </section>
 
       </div>
